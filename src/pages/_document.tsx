@@ -14,11 +14,11 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script
-            async
-            defer
-            src="https://static.cdn.prismic.io/prismic.js?new=true&repo=spacetraveling2"
-          />
+          <script 
+            async 
+            defer 
+            src="https://static.cdn.prismic.io/prismic.js?new=true&repo=space-traveling-josue-gimenes">
+            </script>
         </body>
       </Html>
     );

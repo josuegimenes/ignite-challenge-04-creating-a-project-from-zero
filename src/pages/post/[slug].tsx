@@ -89,6 +89,7 @@ export default function Post({
   if (isPostEdited) {
      editionDate = format(
        Date.now(),
+      // new Date(post.last_publication_date),
       "'* editado em' dd MMM yyyy', às' H':'m",
       {
         locale: ptBR,
@@ -118,7 +119,7 @@ export default function Post({
                 {`${readTime} min`}
               </li>
             </ul>
-            <span>{isPostEdited && editionDate}</span>
+            {isPostEdited && <span>{editionDate}</span>}
           </div>
 
           {post.data.content.map(content => {
